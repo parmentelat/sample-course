@@ -1,2 +1,2 @@
 # dummy-notebooks
-this is toy repo, mostly for playing with nbgitpuller
+this is a toy repo, mostly for playing with nbgitpuller from under nbhosting
