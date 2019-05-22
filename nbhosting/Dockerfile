@@ -8,3 +8,7 @@ RUN pip install nbgitpuller && jupyter serverextension enable --py nbgitpuller
 
 # for bash
 RUN pip install calysto_bash
+
+### configure git 
+RUN git config --global user.email "notebook.user@example.org" && git config --global user.name "Notebook User"
+
