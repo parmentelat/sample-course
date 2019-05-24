@@ -12,3 +12,4 @@ RUN pip install calysto_bash
 ### configure git 
 RUN git config --global user.email "notebook.user@example.org" && git config --global user.name "Notebook User"
 
+RUN apt-get install rsync
