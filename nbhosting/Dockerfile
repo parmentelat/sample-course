@@ -13,6 +13,6 @@ RUN git config --global user.email "notebook.user@example.org" && git config --g
 RUN apt-get install rsync
 
 # the nbgitpuller thingy
-RUN pip install nbgitpuller && jupyter serverextension enable --py nbgitpuller 
+RUN pip install git+https://github.com/parmentelat/nbgitpuller@nbhosting && jupyter serverextension enable --py nbgitpuller 
 
 
