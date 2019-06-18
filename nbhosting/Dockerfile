@@ -15,4 +15,6 @@ RUN apt-get install rsync
 # the nbgitpuller thingy
 RUN pip install git+https://github.com/parmentelat/nbgitpuller@nbhosting && jupyter serverextension enable --py nbgitpuller 
 
+RUN jupyter labextension install @jupyterlab/git && pip install --upgrade jupyterlab-git && jupyter serverextension enable --py jupyterlab_git
+
 
