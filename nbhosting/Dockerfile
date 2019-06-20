@@ -12,6 +12,8 @@ RUN git config --global user.email "notebook.user@example.org" && git config --g
 # for debugging
 RUN apt-get install rsync
 
+RUN pip install --pre rise
+
 # the nbgitpuller thingy
 RUN pip install git+https://github.com/parmentelat/nbgitpuller@nbhosting && jupyter serverextension enable --py nbgitpuller 
 
