@@ -17,7 +17,6 @@ def tracks(coursedir):
                 Section(name="python",
                         coursedir=coursedir,
                         notebooks=notebooks_by_pattern(coursedir,"python*.ipynb")),
-                ],
                 Section(name="slides",
                         coursedir=coursedir,
                         notebooks=notebooks_by_pattern(coursedir,"slides/*.ipynb")),
