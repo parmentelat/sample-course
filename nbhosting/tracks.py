@@ -18,5 +18,9 @@ def tracks(coursedir):
                         coursedir=coursedir,
                         notebooks=notebooks_by_pattern(coursedir,"python*.ipynb")),
                 ],
-              description="dual-language single track"),
+                Section(name="slides",
+                        coursedir=coursedir,
+                        notebooks=notebooks_by_pattern(coursedir,"slides/*.ipynb")),
+                ],
+              description="single track with dual-language and slides"),
         ]
