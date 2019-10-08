@@ -13,7 +13,7 @@ def tracks(coursedir):
               sections=[
                 Section(name="markdown",
                         coursedir=coursedir,
-                        notebooks=notebooks_by_pattern(coursedir,"README.md")),
+                        notebooks=notebooks_by_pattern(coursedir,"*.md")),
                 Section(name="bash",
                         coursedir=coursedir,
                         notebooks=notebooks_by_pattern(coursedir,"bash*.ipynb")),
