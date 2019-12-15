@@ -20,4 +20,5 @@ RUN pip install git+https://github.com/parmentelat/nbgitpuller@nbhosting && jupy
 
 RUN jupyter labextension install @jupyterlab/git && pip install --upgrade jupyterlab-git && jupyter serverextension enable --py jupyterlab_git
 
-RUN pip install folium
+RUN apt-get install -y graphviz
+RUN pip install folium graphviz
