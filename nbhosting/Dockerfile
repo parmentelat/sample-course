@@ -3,16 +3,14 @@
 # base-notebook lacks at least numpy, widgets, so...
 FROM nbhosting/scipy-notebook
 
-# for bash
-RUN pip install calysto_bash
-
-### configure git 
-RUN git config --global user.email "notebook.user@example.org" && git config --global user.name "Notebook User"
-
-# for debugging
-RUN apt-get install rsync
-
-RUN pip install --pre rise
-
-RUN apt-get install -y graphviz
-RUN pip install folium graphviz
+RUN true \
+ # for bash \
+ && pip install calysto_bash \
+ ### configure git \
+ && git config --global user.email "notebook.user@example.org" && git config --global user.name "Notebook User" \
+ # for debugging \
+ && apt-get install rsync \
+ && pip install --pre rise \
+ && apt-get install -y graphviz \
+ && pip install folium graphviz \
+ && true
