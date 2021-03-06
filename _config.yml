@@ -1,0 +1,16 @@
+# Book settings
+title: a sample course
+author: Thierry Parmentelat
+
+only_build_toc_files: true
+
+execute:
+  execute_notebooks: cache
+
+# required since we don't use md:myst input
+sphinx:
+  config:
+    nb_custom_formats:
+      .py:
+        - jupytext.reads
+        - fmt: py:percent
