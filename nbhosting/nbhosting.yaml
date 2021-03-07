@@ -1,38 +1,39 @@
 ---
 tracks:
-- name: micro book
-  description: "just for testing the builds"
-  id: book
-  sections:
-  - name: only one
-    notebooks: [ 01*.md 02*.py ]
-- name: various contents
-  description: a sample of each kind of formats
-  id: samples
-  sections:
-    - name: markdown
-      notebooks: [ *.md ]
-    - name: bash
-      notebooks: [ bash*.ipynb ]
-    - name: python
-      notebooks: [ python*.ipynb ]
-- name: slides themes
-  description: a sample of each available slide theme
-  id: slides
-    - name: slides
-      notebooks: [ slides/*.ipynb ]
-- name: plans
-  description: trying out the plans thing
-  id: plans
-  sections:
-    - name: all
-      notebooks: [ plans/*.ipynb ]
-- name: "metro"
-  description: "a sample TP"
-  id: tp
-  sections:
-  - name: again only one
-    notebooks: [ metro/metro.py ]
+  - name: micro book
+    description: "just for testing the builds"
+    id: book
+    sections:
+    - name: only one
+      notebooks: [ "01*.md", "02*.py" ]
+  - name: various contents
+    description: a sample of each kind of formats
+    id: samples
+    sections:
+      - name: markdown
+        notebooks: [ "*.md" ]
+      - name: bash
+        notebooks: [ "bash*.ipynb" ]
+      - name: python
+        notebooks: [ "python*.ipynb" ]
+  - name: slides themes
+    description: a sample of each available slide theme
+    id: slides
+    sections:
+      - name: slides
+        notebooks: [ "slides/*.ipynb" ]
+  - name: plans
+    description: trying out the plans thing
+    id: plans
+    sections:
+      - name: all
+        notebooks: [ "plans/*.ipynb" ]
+  - name: "metro"
+    description: "a sample TP"
+    id: tp
+    sections:
+    - name: again only one
+      notebooks: [ "metro/metro.py" ]
 
 # to clean the default mapping strategy
 static-mappings: []
@@ -46,10 +47,9 @@ static-mappings: []
 
 builds:
   - name: handouts
-    script: >
+    script: |
       pip install jupyter-book
-      # cd notebooks
-      make book
+      jupyter-book build .
     result-folder: _build/html
     mount-as: jupyter-book
     entry-point: index.html
