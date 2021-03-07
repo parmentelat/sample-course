@@ -4,8 +4,8 @@ tracks:
     description: "just for testing the builds"
     id: book
     sections:
-    - name: only one
-      notebooks: [ "01*.md", "02*.py" ]
+      - name: only one
+        notebooks: [ "01*.md", "02*.py" ]
   - name: various contents
     description: a sample of each kind of formats
     id: samples
