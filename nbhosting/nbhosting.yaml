@@ -50,6 +50,3 @@ builds:
     script: |
       pip install jupyter-book
       jupyter-book build .
-    result-folder: _build/html
-    mount-as: jupyter-book
-    entry-point: index.html
