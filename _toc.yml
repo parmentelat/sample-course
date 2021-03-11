@@ -2,3 +2,4 @@
 - part: "types de base"
   chapters:
   - file: 02-3-containers
+  - file: 03-1-images
