@@ -48,7 +48,7 @@ static-mappings: []
 builds:
   - id: jupyter-book
     name: static html
-    description: searchable static html as produced by jupyter-book
+    description: searchable static HTML as produced by jupyter-book
     script: |
       pip install jupyter-book
       jupyter-book build .
