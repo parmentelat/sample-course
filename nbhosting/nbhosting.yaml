@@ -46,9 +46,9 @@ static-mappings: []
 #    destination: media
 
 builds:
-  - id: handouts
+  - id: jupyter-book
     name: static html
-    description: "searchable static html as produced by jupyter-book"
+    description: searchable static html as produced by jupyter-book
     script: |
       pip install jupyter-book
       jupyter-book build .
