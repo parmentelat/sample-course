@@ -4,3 +4,5 @@
   - file: 02-3-containers
   - file: 03-1-images
   - file: 04-1-interact
+  - file: 04-2-interact-inline
+  - file: 04-3-interact-notebook
