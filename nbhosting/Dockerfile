@@ -11,6 +11,7 @@ RUN true \
  # for debugging \
  && apt-get install rsync \
  && pip install --pre rise \
+ && pip install numpy pandas matplotlib \
  && apt-get install -y graphviz \
  && pip install folium graphviz \
  && true
